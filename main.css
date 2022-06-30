@@ -1,5 +1,6 @@
-html{
+html {
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 .wrapper {
   min-width: 992px;
@@ -39,6 +40,7 @@ nav ul li a {
   max-width: 100%;
   margin: 0 auto;
   position: relative;
+  padding:0 ;
 }
 .banner-text {
   position: absolute;
@@ -60,7 +62,6 @@ nav ul li a {
 }
 .banner img {
   margin-top: 25px;
-  margin-bottom: 0;
   width: 100%;
   max-width: 100%;
 }
@@ -83,38 +84,39 @@ nav ul li a {
 .container {
   background-color: #dfe4ed;
   padding: 0 30px;
+  
 }
 main {
   display: flex;
 }
 .list-guide {
   display: flex;
+  margin-left: -59px;
   flex-wrap: wrap;
-  margin-left:-10px;
+  width: 100%;
+  flex: 1 1 65%;
 }
 .list-guide div {
-  width:420px;
-  height: auto;
-  margin-left: 10px;
-  
+  margin-left: 59px;
+  margin-bottom: 62px;
+  flex: 1 1 43%;
 }
 .list-guide img {
-  max-width:100%;
-  display: flex;
-
+  width: 100%;
+  height: auto;
 }
 .aside-image {
+  flex: 1 1 35%;
 }
 .aside-image img {
-  width: 80%;
+  margin-left: 60px;
+  width: 84.5%;
   height: auto;
-
 }
 footer {
   display: flex;
   justify-content: space-between;
   padding: 35px 30px 70px 30px;
-
   background-color: #ecf2e9;
 }
 footer div {
@@ -130,7 +132,7 @@ footer div h2 {
 footer div p {
   margin-bottom: 15px;
   font-family: Arial;
-  font-bold : 600;
+  font-bold: 600;
   color: #5e6960;
   font-size: 16px;
   word-spacing: 1px;
@@ -142,16 +144,16 @@ footer a {
   font-family: Arial;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  html{
-    overflow-x : hidden
+  html {
+    overflow-x: hidden;
   }
   .wrapper {
-   min-width:100%;
-   margin: 0 auto;
+    min-width: 100%;
+    margin: 0 auto;
   }
-  header{
+  header {
     padding-top: 40px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     background-color: #1b2e42;
   }
   nav ul li a {
@@ -161,35 +163,35 @@ footer a {
     font-family: Verdana, sans-serif;
   }
   .left-navigation {
-   margin-left: 10px;
-   padding-left: 0;
+    margin-left: 10px;
+    padding-left: 0;
   }
   .right-navigation {
     margin-right: 10px;
     padding-right: 0;
   }
   .banner {
-    margin-left:20px;
-    margin-top: 80px; 
+    margin-left: 20px;
+    margin-top: 80px;
   }
   .banner img {
-    display:none;
+    display: none;
   }
   .banner-text {
-   position: relative;
-   left:0;
-   top: 0;
+    position: relative;
+    left: 0;
+    top: 0;
   }
   .banner-text h1 {
     color: black;
     font-size: 38px;
     font-family: Arial;
-    margin-bottom:40px;
+    margin-bottom: 40px;
   }
-  .container{
+  .container {
     background-color: #fff;
-    margin-left:20px;
-    padding : 0;
+    margin-left: 20px;
+    padding: 0;
   }
   .banner-text p {
     color: black;
@@ -201,34 +203,34 @@ footer a {
     color: black;
     font-size: 38px;
   }
-  main{
-      display:block;
-      
+  main {
+    display: block;
   }
   .list-guide {
     display: flex;
     align-items: flex-end;
-    margin-left:-10px;
+    margin-left: -10px;
   }
-  .container{
+  .container {
     margin-right: 20x;
   }
   .list-guide div {
-   margin: 0 ;
-   padding :30px 20px;
-  flex : 1 1 auto;
+    margin: 0;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+    flex: 1 1 40%;
   }
   .list-guide img {
     width: 100%;
     height: auto;
   }
   .aside-image {
-    padding: 5px 22px 3px 0;
-    margin: 14px 0 25px 10px;
-    flex : 1 1 auto;
+    padding: 5px 80px 3px 0;
   }
   .aside-image img {
-    width: 100%;
+    position: relative;
+    right: 51px;
+    width: 50%;
     height: auto;
   }
   footer {
@@ -240,7 +242,7 @@ footer a {
     margin-top: 60px;
   }
   footer div h2 {
-    font-size:34px;
+    font-size: 34px;
     margin-bottom: 20px;
     color: #0c172b;
     font-weight: 600;
@@ -249,7 +251,7 @@ footer a {
   footer div p {
     margin-bottom: 35px;
     font-family: Arial;
-    font-bold : 600;
+    font-bold: 600;
     color: #5e6960;
     font-size: 16px;
     word-spacing: 1px;
@@ -257,96 +259,127 @@ footer a {
   footer a {
     font-size: 16px;
     text-decoration: underline;
-    color: #5e6960;
+    color: #3d86f5;
     font-family: Arial;
   }
-} @media (max-width: 767px) {
-  html{
-    overflow-x : hidden;
+}
+@media (max-width: 767px) {
+  html {
+    overflow-x: hidden;
   }
   .wrapper {
-    max-width : 767px;
-    margin: 0 auto;
-   
+    max-width: 100%;
+    min-width: 0;
   }
-  header{
-    display:flex;
-    margin:0;
-    padding:20px 0;
+  header {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
     background-color: #1b2e42;
   }
-  nav{
+  nav {
+    display: flex;
+    justify-content: center;
     margin-left: 10px;
+    padding-left: -10px;
+    padding-right: 10%;
   }
   nav ul li {
-    padding-left: 55px;
+    padding-left: 10px;
   }
   nav ul li a {
+    display: inline-block;
+    padding: 1 0px 0;
     text-decoration: none;
+    font-size: 55%;
     text-transform: uppercase;
     color: #b8bbbf;
     font-family: Verdana, sans-serif;
   }
   .banner img {
-    display:none;
+    display: none;
   }
   .banner-text {
     position: relative;
-    left:0;
+    left: 0;
     top: 0;
-   }
-   .banner-text h1 {
-     margin-top: 70px;
-     margin-left:35px;
-     color: black;
-     font-size: 38px;
-     font-family: Arial;
-     margin-bottom:40px;
-   }
-   main{
-    display:block;
-    
-   }
-   .main-title {
+  }
+  .banner-text h1 {
+    margin-top: 70px;
+    margin-left: 35px;
     color: black;
-    font-size: 38px;
+    font-size: 230%;
+    font-family: Arial;
+    width: 100%;
   }
-   .container{
-     background-color: #fff;
-     margin-left:35px;
-     padding : 0;
-   }
-   .list-guide div {
-    margin: 0 ;
-    padding :30px 0;
-    flex-basis : 90%;
-   }
-   .list-guide img {
-     max-width: 68% ;
-     height: auto;
-    
-   }
+  .banner-text p {
+    color: #5e6960;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 20px 40px 40px 40px;
+  }
+  main {
+    display: block;
+  }
+  .main-title {
+    color: black;
+    font-size: 230%;
+    width: 100%;
+  }
+  .container {
+    background-color: #fff;
+    margin-left: 35px;
+    padding: 0;
+  }
+  .list-guide {
+    margin: 0 auto;
+  }
+  .list-guide div {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .list-guide img {
+    max-width: 93%;
+    height: 125px;
+    margin-bottom: 50px;
+  }
   .left-navigation {
-    margin-left: 0 ;
-    padding-left: 0 ;
+    margin-left: 0;
+    padding-left: 0;
   }
-  .list-guide{
-   display:block;
+  .list-guide {
+    display: block;
   }
+
   .aside-image {
-    display:block;
+    display: block;
   }
   .aside-image img {
-    width:  71.5% ;
+    width: 93%;
     height: auto;
+    margin: 0 auto;
   }
   .right-navigation {
     padding: 0;
     margin-right: 0;
   }
   footer {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+
     background-color: #fff;
+    white-space: nowrap;
+
+    padding: 35px 0px 70px 35px;
+  }
+  footer div h2 {
+    font-size: 230%;
+    width: 100%;
+  }
+  footer div p {
+    font-size: 13.5px;
   }
 }
