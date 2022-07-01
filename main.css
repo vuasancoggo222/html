@@ -1,30 +1,33 @@
-html {
-  margin: 0 auto;
-  scroll-behavior: smooth;
-}
+
 .wrapper {
   min-width: 992px;
+}
+body {
+  margin: 0;
 }
 h1,
 h2,
 p {
   margin: 0;
 }
+header {
+  padding: 50px 25px;
+}
 nav {
   display: flex;
   justify-content: space-between;
 }
-nav ul {
+.right-navigation {
+  padding-right: 80px;
+  margin: 0;
 }
 .left-navigation {
-  margin-left: 35px;
-}
-.right-navigation {
-  margin-right: 140px;
+  margin:0;
 }
 nav ul li {
-  padding: 0 16px;
   display: inline-block;
+  padding: 0 20px;
+  margin: 0;
 }
 nav ul li {
   font-size: 16px;
@@ -38,14 +41,13 @@ nav ul li a {
 }
 .banner {
   max-width: 100%;
-  margin: 0 auto;
   position: relative;
-  padding:0 ;
+  display:flex;
 }
 .banner-text {
   position: absolute;
   top: 30%;
-  left: 6.3%;
+  left: 6%;
 }
 .banner-text h1 {
   color: #ffffff;
@@ -61,7 +63,6 @@ nav ul li a {
   margin: 5px 0;
 }
 .banner img {
-  margin-top: 25px;
   width: 100%;
   max-width: 100%;
 }
@@ -71,7 +72,6 @@ nav ul li a {
   font-weight: 700;
   font-size: 24px;
   padding-left: 2px;
-  padding-top: 35px;
   margin-bottom: 13px;
 }
 .main-paragraph {
@@ -83,7 +83,7 @@ nav ul li a {
 }
 .container {
   background-color: #dfe4ed;
-  padding: 0 30px;
+  padding: 35px 30px;
   
 }
 main {
@@ -91,40 +91,40 @@ main {
 }
 .list-guide {
   display: flex;
-  margin-left: -59px;
   flex-wrap: wrap;
   width: 100%;
-  flex: 1 1 65%;
+  margin-left: -15px;
+  flex: 1 1 70%;
 }
 .list-guide div {
-  margin-left: 59px;
-  margin-bottom: 62px;
-  flex: 1 1 43%;
+  flex: 1 1 45%;
+  padding: 15px 15px;
 }
 .list-guide img {
   width: 100%;
   height: auto;
 }
 .aside-image {
-  flex: 1 1 35%;
+  flex: 1 1 30%;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 .aside-image img {
-  margin-left: 60px;
-  width: 84.5%;
-  height: auto;
+  width: 100%;
+  height: 96%;
 }
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 35px 30px 70px 30px;
+  padding: 50px 0px 75px 0px;
   background-color: #ecf2e9;
 }
 footer div {
-  margin-top: 20px;
   flex: 1;
+  padding-left: 40px;
 }
 footer div h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #0c172b;
   font-weight: 600;
   font-family: Helvetica;
@@ -140,7 +140,7 @@ footer div p {
 footer a {
   font-size: 16px;
   text-decoration: underline;
-  color: #3d86f5;
+  color: #68a8c9;
   font-family: Arial;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -149,12 +149,14 @@ footer a {
   }
   .wrapper {
     min-width: 100%;
-    margin: 0 auto;
+    margin: 0;
   }
   header {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background-color: #1b2e42;
+    padding: 50px 20px 35px 15px;
+    background-color: #596370;
+  }
+  nav ul li {
+    padding: 0 15px;
   }
   nav ul li a {
     text-decoration: none;
@@ -163,16 +165,17 @@ footer a {
     font-family: Verdana, sans-serif;
   }
   .left-navigation {
-    margin-left: 10px;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
   }
   .right-navigation {
-    margin-right: 10px;
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
   }
   .banner {
-    margin-left: 20px;
-    margin-top: 80px;
+    padding: 0 30px;
+    padding-top: 80px;
+  
   }
   .banner img {
     display: none;
@@ -184,72 +187,81 @@ footer a {
   }
   .banner-text h1 {
     color: black;
-    font-size: 38px;
+    font-size: 42px;
     font-family: Arial;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+  .line-break {
+    height: 2px;
+    background-color: #c8c8c8;
+    width: 90%;
+    margin: 0 20px;
   }
   .container {
     background-color: #fff;
-    margin-left: 20px;
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
   }
   .banner-text p {
     color: black;
     font-size: 16px;
     font-family: Arial;
-    margin: 5px 0 30px 0;
+    margin: 0px 0 20px 0;
   }
   .main-title {
     color: black;
     font-size: 38px;
+    padding-left: 0px;
   }
   main {
     display: block;
+    margin: -30px -15px 0 -15px;
   }
   .list-guide {
     display: flex;
     align-items: flex-end;
-    margin-left: -10px;
-  }
-  .container {
-    margin-right: 20x;
+    margin: 0px;
   }
   .list-guide div {
     margin: 0;
-    padding: 20px 20px;
+    padding: 30px 15px;
     flex-wrap: wrap;
-    flex: 1 1 40%;
+    flex: 1 1 45%;
   }
   .list-guide img {
     width: 100%;
     height: auto;
   }
   .aside-image {
-    padding: 5px 80px 3px 0;
+    display: block;
+    padding-left: 15px;
+    padding-top: 30px;
   }
   .aside-image img {
-    position: relative;
-    right: 51px;
-    width: 50%;
+    width: 47%;
     height: auto;
   }
   footer {
     display: block;
-    margin: -60px 30px 70px 0px;
+    padding : 0 20px;
     background-color: #fff;
   }
   footer div {
-    margin-top: 60px;
+    margin: 70px 0;
+    padding:0;
   }
   footer div h2 {
+    margin: 0;
     font-size: 34px;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
     color: #0c172b;
     font-weight: 600;
     font-family: Arial;
   }
   footer div p {
-    margin-bottom: 35px;
+    margin: 0;
+    padding-bottom: 15px;
     font-family: Arial;
     font-bold: 600;
     color: #5e6960;
@@ -259,7 +271,8 @@ footer a {
   footer a {
     font-size: 16px;
     text-decoration: underline;
-    color: #3d86f5;
+    color: 
+    #68a8c9;
     font-family: Arial;
   }
 }
@@ -267,34 +280,44 @@ footer a {
   html {
     overflow-x: hidden;
   }
+  p {
+    font-size: 110% !important;
+  }
   .wrapper {
     max-width: 100%;
     min-width: 0;
   }
   header {
-    display: block;
     margin: 0;
-    padding: 10px 0;
-    background-color: #1b2e42;
+    background-color: #556370;
+    padding: 40px 0;
   }
   nav {
     display: flex;
-    justify-content: center;
-    margin-left: 10px;
-    padding-left: -10px;
-    padding-right: 10%;
+    justify-content: flex-start;
+    margin: 0;
+    padding-left: 5px;
+   
   }
-  nav ul li {
-    padding-left: 10px;
+  
+  .right-navigation {
+    margin: 0;
+    padding: 0;
+  }
+  .left-navigation {
+    margin: 0;
+    padding: 0;
   }
   nav ul li a {
-    display: inline-block;
-    padding: 1 0px 0;
+    font-size: 13px;
     text-decoration: none;
-    font-size: 55%;
     text-transform: uppercase;
     color: #b8bbbf;
     font-family: Verdana, sans-serif;
+  }
+  .banner {
+    margin: 0;
+    padding: 0;
   }
   .banner img {
     display: none;
@@ -303,47 +326,54 @@ footer a {
     position: relative;
     left: 0;
     top: 0;
+    padding-top: 70px;
+    padding-left: 20px;
   }
   .banner-text h1 {
-    margin-top: 70px;
-    margin-left: 35px;
-    color: black;
-    font-size: 230%;
+    color: #2e3741;
+    font-size: 275%;
     font-family: Arial;
-    width: 100%;
+    word-spacing: 8px;
   }
   .banner-text p {
-    color: #5e6960;
+    color: #2e3741;
     margin: 0 auto;
-    font-size: 16px;
-    padding: 20px 40px 40px 40px;
+    padding: 0;
+    padding: 20px 40px 40px 0;
   }
   main {
     display: block;
   }
   .main-title {
-    color: black;
-    font-size: 230%;
-    width: 100%;
+    color: #2e3741;
+    font-size:275%;
+    font-family: Arial;
+    word-spacing: 8px;
+    margin: 0;
+  }
+  .main-paragraph {
+    margin-top: 15px;
+    margin-bottom: 55px;
   }
   .container {
     background-color: #fff;
-    margin-left: 35px;
-    padding: 0;
+    padding: 0 20px;
+    margin: 0;
+    padding-bottom: 15px;
   }
   .list-guide {
-    margin: 0 auto;
+    margin: 0;
   }
   .list-guide div {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    margin-bottom: 55px;
   }
   .list-guide img {
-    max-width: 93%;
-    height: 125px;
-    margin-bottom: 50px;
+    width: 100%;
+    height: 50%;
   }
   .left-navigation {
     margin-left: 0;
@@ -351,15 +381,16 @@ footer a {
   }
   .list-guide {
     display: block;
+    width: 100%;
   }
 
   .aside-image {
     display: block;
+    padding: 0;
   }
   .aside-image img {
-    width: 93%;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
   }
   .right-navigation {
     padding: 0;
@@ -369,17 +400,27 @@ footer a {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-
     background-color: #fff;
     white-space: nowrap;
-
-    padding: 35px 0px 70px 35px;
+    padding: 0;
+    margin: 0;
+  }
+  footer div {
+    margin: 0;
+    padding: 30px 20px;
   }
   footer div h2 {
-    font-size: 230%;
+    font-size: 275%;
     width: 100%;
+    margin-bottom: 20px;
   }
   footer div p {
-    font-size: 13.5px;
+    white-space: normal;
+    font-size: 20.5px;
+    margin-bottom: 40px;
+  }
+  footer div a {
+    color : #989898;
+    
   }
 }
