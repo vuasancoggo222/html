@@ -70,7 +70,7 @@
     margin-bottom: 13px;
   }
   .main-paragraph {
-    
+    font-size:19px;
     margin-bottom: 35px;
     font-family: Arial;
     font-weight: 400;
@@ -115,7 +115,7 @@
   }
   footer div {
     flex: 1;
-    padding: 0 48px 0 30px;
+    padding: 0 24px 0 30px;
   }
   footer div h2 {
     margin-bottom: 15px;
@@ -128,10 +128,10 @@
     margin-bottom: 15px;
     font-family: Arial;
     color: #5e6960;
-    font-size: 18px;
+    font-size: 19px;
   }
   footer a {
-    font-size: 18px;
+    font-size: 19px;
     text-decoration: underline;
     color: #68a8c9;
     font-family: Arial;
